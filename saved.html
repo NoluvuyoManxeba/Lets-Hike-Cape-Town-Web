@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Items</title>
+  <link rel="stylesheet" type="text/css" href="myStyles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutMe.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="saved.html">Saved</a></li>
+      <li><a href="comments.html">Comment</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="saved-items-container">
+      <h1>Saved Items</h1>
+      <div id="saved-items"></div>
+    </div>
+    <script>
+      // JavaScript to display items in the "Save for later" folder
+      document.addEventListener("DOMContentLoaded", function() {
+        var savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+        var savedItemsContainer = document.getElementById("saved-items");
+        
+        if (savedItems.length === 0) {
+          savedItemsContainer.innerHTML = "<p>No items saved.</p>";
+        } else {
+          savedItems.forEach(function(item) {
+            var imageElement = document.createElement("img");
+            imageElement.src = item;
+            savedItemsContainer.appendChild(imageElement);
+          });
+        }
+      });
+    </script>
+  </main>
+</body>
+</html>

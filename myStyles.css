@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 36px;
+    color: white;
+    
+  }
+  nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #f2f2f2;
+  }
+  main {
+    padding: 20px;
+  }
+  main h2 {
+    font-size: 24px;
+  }
+  main img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    
+  }
+  main table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  main th, td {
+    border: 1px solid #333;
+    padding: 10px;
+  }
+  main form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  main label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  main input[type="email"], main input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+  }
+  main input[type="radio"] {
+    margin-right: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif; 
+  }
+  header {
+    background-color: #000000;
+    padding: 20px; 
+    text-align: center; /* centers the text in the header */
+  }
+  header h1 {
+    font-size: 36px; 
+  }
+  nav {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+  }
+  nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+  }
+  nav li {
+    display: inline-block; 
+    margin-right: 10px; 
+  }
+  nav a {
+    color: #fff; 
+    text-decoration: none; 
+  }
+  nav a:hover {
+    color: blueviolet; 
+  }
+  main {
+    padding: 20px; 
+  }
+  main h2 {
+    font-size: 24px; 
+  }
+  main img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  main form {
+    width: 300px; 
+    margin: 0 auto; 
+    text-align: left; 
+  }
+  main label {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  main input[type="email"], main input[type="submit"] {
+    padding: 10px; 
+    width: 100%; 
+  }
+  main input[type="radio"] {
+    margin-right: 10px; 
+  }
+  main blockquote {
+  background-color: #f2f2f2; 
+  padding: 20px;   
+  font-style: italic;   
+  }
+  .bg-img {
+  background-image: url('https://insideguide.co.za/cape-town/app/uploads/2016/10/hiking-tails-cape-town-platterklip-gorge.jpg'); 
+  padding: 20px; 
+  text-align: center; 
+  
+  }
+  .bg-color {
+  background-color: #000000; 
+  color: #fff; 
+  padding: 20px; 
+  text-align: center; 
+  }
+  footer {
+  background-color: #f2f2f2; 
+  text-align: center; 
+  padding: 20px; 
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column:hover{
+  opacity: 0.7;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-facebook {
+  color: white;
+}
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+body{
+  margin: 30px;
+}
+
+button{
+  cursor: pointer;
+  outline: 0;
+  color: #000000;
+
+}
+
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}

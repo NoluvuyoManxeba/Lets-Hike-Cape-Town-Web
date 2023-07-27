@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comments</title>
+<link rel="stylesheet" type="text/css" href="myStyles.css">
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutMe.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="saved.html">Saved</a></li>
+<li><a href="comments.html">Comment</a></li>
+</ul>
+</nav>
+<main>
+<form id="comments-form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments"></textarea>
+<input type="submit" value="Submit">
+</form>
+<div id="comments-list"></div> <!-- Added a container for comments -->
+<script>
+// JavaScript to handle form submission and display comments
+document.getElementById("comments-form").addEventListener("submit", function(event) {
+event.preventDefault();
+var name = document.getElementById("name").value;
+var comments = document.getElementById("comments").value;
+document.getElementById("comments-list").innerHTML += "<div>" + name + ": " + comments + "</div>";
+});
+</script>
+</body>
+</html>
